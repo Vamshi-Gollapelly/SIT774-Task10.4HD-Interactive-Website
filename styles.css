@@ -1,0 +1,169 @@
+/* Set up main colours and fonts for the site */
+:root {
+  --primary-bg: #F5F7FA;          /* Light background for the page */
+  --primary-color: #a03e86;       /* Main colour for navbar and buttons */
+  --secondary-color: #a03e86;     /* Used for cards and other highlights */
+  --accent-color: #F97316;        /* Bright orange for hover effects and CTAs */
+  --text-color: #0F172A;          /* Dark text for readability */
+  --card-bg: #FFFFFF;             /* White card backgrounds */
+  --card-border: #E2E8F0;         /* Light grey borders on cards */
+  --font-family: 'Poppins', sans-serif;  /* Clean, modern font for text */
+}
+
+/* General page setup */
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  scroll-behavior: smooth; /* Smooth scrolling when using links */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar - main menu at the top */
+.navbar {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); /* Gradient from main colour */
+}
+
+.nav-link {
+  color: #fff !important; /* White text for menu items */
+  font-weight: 600;
+  transition: all 0.3s ease; /* Smooth colour change on hover */
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important; /* Orange colour when hovering over a menu item */
+}
+
+/* Hero Section - the big banner at the top */
+.hero-section {
+  background-image: url('https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover; /* Make sure the image covers the whole area */
+  background-position: center;
+  height: 90vh; /* Takes up most of the screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* Add a shadow so the text is easier to read */
+}
+
+/* Text inside the hero section */
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+}
+
+/* Main buttons (like "Explore Features") */
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease; /* Smooth hover effect */
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--accent-color); /* Orange when hovered over */
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.5); /* Add a soft glow */
+  transform: scale(1.1); /* Make it slightly bigger */
+}
+
+/* Cards for features (like Parallax, Cards, Buttons) */
+.feature-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(241, 99, 177, 0.2); /* Soft pink shadow */
+}
+
+/* Icons inside cards */
+.feature-card i {
+  color: var(--secondary-color); /* Same pink colour as navbar */
+  font-size: 2rem;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover i {
+  color: var(--accent-color); /* Icons turn orange when you hover over them */
+}
+
+/* Card headings */
+.feature-card h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Card text */
+.feature-card p {
+  color: #475569; /* Light grey text */
+  font-size: 1rem;
+}
+
+/* Outline style buttons */
+.btn-outline-primary {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 30px;
+  padding: 0.5rem 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background: var(--secondary-color);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Accordion (FAQ-style section) */
+.accordion-button {
+  background: var(--secondary-color);
+  color: white;
+  font-weight: 600;
+}
+
+.accordion-body {
+  background: var(--primary-bg);
+  color: var(--text-color);
+}
+
+/* Testimonials text */
+.carousel-item blockquote {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.carousel-item footer {
+  font-size: 0.9rem;
+  color: #fafafa; /* Light text for the footer */
+}
+
+/* Footer section */
+footer {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: white;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent-color); /* Links in footer turn orange when hovered */
+}
